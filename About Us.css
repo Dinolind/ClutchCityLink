@@ -1,0 +1,45 @@
+body {
+    background-color: #fbfbfb;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    font-family:'Agency FB Bold', arial;
+    color: #616666;
+    font-size: 48px;
+    margin-bottom: -15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+p {
+    font-family:'Agency FB Bold', arial;
+    color: #616666;
+    font-size: 24px;
+    margin-bottom: 50px;
+    word-wrap: break-word;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.bottom {
+    margin-bottom: 70px;
+}
+.top {
+    margin-top: 50px;
+}
+.rule {
+    background-color: #C00717;
+    height: 4px;
+}
+
+@media(max-width:1366px) {
+    .rule {
+        width: 99%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

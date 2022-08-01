@@ -1,0 +1,83 @@
+.container {
+    max-width: 1366px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: calc(100vh - 222px);
+}
+
+.form-group {
+    padding-top: 10px;
+}
+
+label {
+    font-family: futura-pt-condensed, sans-serif;
+    font-size: 1.5rem;
+    padding-top: 30px;
+}
+
+.form-control {
+    width: 50%;
+    height: 30px;
+    display: block;
+}
+
+.btn-primary {
+    padding: 14px 45px;
+    background-color: #901A25;
+    color: #FBFBFB;
+    font-family: 'Agency FB Bold', arial;
+    font-size: 1.125rem;
+    text-decoration: none;
+    border-radius: 13px;
+    border: none;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Agency FB Bold', arial;
+    margin-bottom: 10px;
+}
+
+.redrule {
+    border: solid #C00717 2px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+p {
+    font-size: 1.75rem;
+}
+
+input {
+    font-size: 20px;
+    font-family: 'Agency FB Bold', arial;
+}
+
+.basketball-container {
+    width: 45%;
+    height: auto;
+}
+
+.col-md-12 {
+    width: 100%;
+}
+
+@media (max-width:743px) {
+    .form-control {
+        width: 98%;
+    }
+    .basketball {
+        display: none;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.25rem;
+    }
+    label {
+        font-size: 1.5rem;
+    }
+}

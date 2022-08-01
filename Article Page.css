@@ -1,0 +1,78 @@
+body {
+    background-color: #fbfbfb;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+h1 {
+    font-family:'Agency FB Bold', arial;
+    color: #616666;
+    font-size: 4rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+p {
+    font-family: futura-pt-condensed, sans-serif;
+    color: #616666;
+    font-size: 2rem;
+    word-wrap: break-word;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h2 {
+    font-family:'Agency FB Bold', arial;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-decoration: underline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+a {
+    color: #616666;
+}
+
+h4 {
+    font-family: futura-pt-condensed, sans-serif;
+    color: #1a1a1a;
+    font-size: 2rem;
+    word-wrap: break-word;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.image {
+    text-align: center;
+}
+
+@media (max-width:667px){
+    h1 {
+        font-size: 3rem;
+        margin-top: 0;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:492px){
+    h1 {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}

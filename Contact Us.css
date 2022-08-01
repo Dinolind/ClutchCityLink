@@ -1,0 +1,296 @@
+html {
+    height: 100%;
+}
+
+.icons-mobile {
+    display: none;
+}
+.links-mobile {
+    display: none;
+}
+.icons-mobile2 {
+    display: none;
+}
+.testing {
+    display: none;
+}
+.testing1 {
+    display: none;
+}
+.testing2 {
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    background-color: #1a1a1a;
+    background-image: url(images/Red\ Smoke\ Background.jpg);
+    background-size: cover;
+    background-position: 50% bottom;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.socialmediatext {
+    text-align: center;
+    font-family: 'Agency FB Bold', arial;
+    font-size: 72px;
+    color: #303333;
+    position: relative;
+    top: 30rem;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socialmediabox {
+    background-color: #C1CBCB;
+    height: 450px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    opacity: 0.62;
+    margin-top: 182px;
+    margin-bottom: 234px;
+    position: relative;
+    z-index: -1;
+}
+.content-wrapper {
+    position: relative;
+    margin-top: -275px;
+    margin-bottom: 0px;
+    z-index: -1;
+}
+
+.socialmediabottomtext {
+    font-family: 'Agency FB Bold', arial;
+    font-size: 3rem;
+    color: #303333;
+    position: relative;
+    top: 37rem;
+    z-index: 1;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.icons {
+    display: flex;
+    justify-content:center ;
+    position: relative;
+    top: 35rem;
+    right: 1rem;
+    z-index: 1;
+}
+
+.icon {
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+/* Moving Icons Closer Together */
+@media (max-width: 1246px) {
+    .icon {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .socialmediabottomtext {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+/* Small Desktop/Tablet View */
+@media (max-width: 1103px) {
+
+    body {
+        background-position: center bottom;
+    }
+
+    .links {
+        display: block;
+        text-align: center;
+        width: 350px;
+        position: relative;
+        top: -12.4rem;
+    }
+
+    .socialmediabottomtext:first-child{
+        visibility: hidden;
+    }
+
+    .socialmediabottomtext:nth-child(2){
+    margin-left: 0px;
+    }
+
+
+    .icons {
+        display: none
+    }
+
+    .icons-mobile {
+        display: none;
+        position: relative;
+        top: 12.2rem;
+        left: 1rem;
+        margin-top: 5px;
+        z-index: 1;
+        align-items: center;
+        justify-content: center;
+    }
+    .socialmediatext {
+        font-size: 3rem;
+        width: 300px; 
+        top: 45rem;
+    }
+    .position2 {
+        display: flex;
+        justify-content:center;
+        position: relative;
+        top: 25rem;
+        }
+
+    .socialmediabox {
+        position: relative;
+        top: 12rem;
+
+    }
+
+    .position {
+        margin-bottom: 100px;
+        position: relative;
+        top: -15rem;
+    }
+
+    .content-wrapper {
+        position: relative;
+        margin-top: -300px;
+        margin-bottom: -150px;
+    }
+
+}
+/* Small Desktop/Tablet View */
+@media (max-width: 563px) {
+    .socialmediabox {
+        display: none;
+    }
+
+    .socialmediabox2 {
+    background-color: #C1CBCB;
+    height: 630px;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    opacity: 0.62;
+    z-index: -1;
+    position: absolute;
+    bottom: -300px    }
+    .socialmediatext {
+        top: 38rem;
+    }
+    .links {
+        display: none;
+    }
+    .links-mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        z-index: 1;
+        
+    }
+    .links-mobile-child1 {
+        text-align: center;
+        font-family: 'Agency FB Bold', arial;
+        font-size: 48px;
+        color: #303333;
+        position: relative;
+        right:2rem;
+        top: 18.5rem;
+        max-width: 250px;
+        z-index: 1;
+    }
+    .links-mobile-child2 {
+        text-align: center;
+        font-family: 'Agency FB Bold', arial;
+        font-size: 48px;
+        color: #303333;
+        position: relative;
+        right:2rem;
+        top: 24rem;
+        z-index: 1;
+        white-space: nowrap;
+    }
+    .links-mobile-child3 {
+        text-align: center;
+        font-family: 'Agency FB Bold', arial;
+        font-size: 48px;
+        color: #303333;
+        position: relative;
+        right:2rem;
+        top: 30rem;
+        z-index: 1;
+        white-space: nowrap;
+    }
+    .icons-mobile {
+        display: none;
+    }
+    .icons-mobile2 {
+        display: block;
+        margin-top: 110px;
+        margin-bottom: 110px;
+        position: relative;
+        background-attachment: fixed;
+        top: 6rem;
+        left: 7.2rem;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .testing {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 14rem;
+    }
+    .testing1 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 26rem;
+    }
+    .testing2 {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 39rem;
+    }
+    .content-wrapper {
+        margin-bottom: -100px;
+        margin-top: -300px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 444px) {
+.testing1 {
+    position: relative;
+    bottom: 23rem;
+}
+.testing2 {
+    position: relative;
+    bottom: 38rem;
+}
+.testing {
+    position: relative;
+    bottom: 11rem;
+}
+}

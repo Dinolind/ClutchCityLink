@@ -1,0 +1,295 @@
+/* Global View AKA Big Desktop View */
+html, body {
+    overflow-x: hidden;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body {
+    position: relative
+  }
+body {
+    z-index: 999999999;
+    font-family: 'AGENCYB' !important;
+    margin: 0px;
+}
+#menuToggle{
+    display: none;
+}
+header {
+    /* This defines header characteristics */
+    background-color: #1A1A1A;
+    height: 108px;
+    max-width: 1366px;
+    /* This vertically aligns the logo in the header */
+    display: flex;
+    align-items: center;
+    /* This seperates the navbuttons from the logo in the header */
+    justify-content: space-between;
+    /* This centers the header */
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo {
+    margin-left: 10px;
+    width: 357px;
+    height: 70px;
+}
+.navbutton:first-child {
+    display: none;
+}
+.navbutton {
+    /* This stylizes the navbuttons and removes the underline */
+    background-color: #901A25;
+    color: #FBFBFB;
+    font-size: 1.125rem;
+    text-decoration: none;
+    /* This creates the navbutton size */
+    padding: 14px 45px;
+    /* This makes the navbutton corners rounderd */
+    border-radius: 13px;
+    /* This seperates the navbuttons from eachother */
+    margin-right: 22.5px;
+    margin-left: 22.5px;
+}
+.navbuttons {
+    /* This moves all of the nav buttons down and to the left */
+    margin-top: 10px;
+}
+/* Small Desktop View */
+@media (max-width: 1245px) {
+    .navbutton {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .navbuttons {
+        margin-right: 10px;
+    }
+}
+
+/* Small Desktop View */
+@media (max-width: 1112px) {
+    .logo {
+        display: none;
+    }
+    .navbutton:first-child {
+        display: inline-block;
+    }
+    .navbuttons {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Tablet View */
+@media (max-width: 875px) {
+    .logo {
+        display: inline-block;
+    }
+    .navbuttons {
+        display: none;
+    }
+    .burger-menu-items
+    {
+    text-decoration: none;
+    color: #fbfbfb;
+    transition: color 0.3s ease;
+    }
+
+    #menuToggle
+    {
+      display: block;
+      position: relative;
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+      margin-right: 10px;
+      margin-top: 3px;
+    }
+    
+    #menuToggle input
+    {
+      display: block;
+      width: 63px;
+      height: 42px;
+      position: absolute;
+      
+      cursor: pointer;
+      
+      opacity: 0; /* hide this */
+      z-index: 2; /* and place it over the hamburger */
+      
+      -webkit-touch-callout: none;
+    }
+    
+    #menuToggle span
+    {
+      display: block;
+      width: 63px;
+      height: 4px;
+      margin-bottom: 15px;
+      position: relative;
+      
+      background: #fbfbfb;
+      border-radius: 3px;
+      
+      z-index: 1;
+      
+      transform-origin: 4px 0px;
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+      margin-bottom: 0px;
+    }
+    
+    #menuToggle input:checked ~ span
+    {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #fbfbfb;
+    }
+    
+    
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+      opacity: 1;
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #menu
+    {
+      height: 100vh;
+      position: absolute;
+      width: 290px;
+      margin: -150px 0 0 0;
+      padding-right: 50px;
+      padding-left: 10px;
+      padding-top: 125px;
+      right: -100px;
+      background: #901a25;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      transform-origin: 0% 0%;
+      transform: translate(100%, 0);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menu li
+    {
+      padding: 18px 0;
+      font-size: 2rem;
+    }
+    
+    #menuToggle input:checked ~ ul
+    {
+      overflow: hidden;
+      transform: none;
+      opacity: 1;
+      position: fixed;
+    }
+}
+/* Phone View */
+@media (max-width:500px){
+    .logo {
+        margin-left: 8px;
+        width: 220px;
+        height: 40px;
+    }
+    #menuToggle {
+        margin-top: 6px;
+        margin-right: 8px;
+    }
+    #menuToggle span {
+        width: 33px;
+        margin-bottom: 5px;
+    }
+    #menuToggle input {
+        width: 33px;
+        height: 22px;
+        margin: 0;
+    }
+    
+}
+/* Burger menu small height */
+@media (max-height:740px){
+    #menu li{
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
+}
+@media (max-height:544px){
+    #menu {
+        margin: -170px 0 0 0;
+    }
+}
+
+
+
+
+/* Footer Starts */
+/* Footer Starts */
+
+
+/* Global View Aka Desktop View*/
+footer {
+    /* This defines footer characteristics */
+    background-color: #616666;
+    height: 114px;
+    width: 1366px;
+    /* This centers the footer */
+    margin-right: auto;
+    /* This makes the footer go all across the page */
+    margin-left: calc(50% - 50vw);
+    width: 100vw;
+    /* This positions the footer to the bottom */
+    /* These properly postion the text links */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links {
+    /* These stylize the text links */
+    color: #FBFBFB;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    /* These seperate the text links */
+    margin-right: 38px;
+    margin-left: 38px;
+}
+
+/* Mobile View */
+@media (max-width:735px){
+    .footer-links {
+        font-family: futura-pt-condensed, sans-serif;
+        font-size: 1.5rem;
+        margin-right: 20px;
+        margin-left: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width:350px){
+    .footer-links {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+

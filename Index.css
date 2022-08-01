@@ -1,0 +1,199 @@
+body {
+    background-color: #1a1a1a;
+    overflow-x: hidden;
+}
+h3 {
+    display: none;
+}
+
+.container {
+    max-width: 1366px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+
+.attributionbox {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 330px;
+    height: 40px;
+    background-color: #303333;
+}
+
+.attribution-text {
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 1rem;
+    font-family: futura-pt-condensed, sans-serif;
+    color: #FBFBFB;
+    word-wrap: break-word;
+    line-height: 18px;
+}
+
+.attribution-text-link {
+    text-decoration: underline;
+    color: #FBFBFB;
+}
+
+.article-card-picture {
+    /* size of picture */
+    width: 330px;
+    height: 220px;
+    /* Placeholder for img, delete if neccesary */
+    background-color: #FBFBFB;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #616666;
+    font-family: futura-pt-condensed, sans-serif;
+    font-size: 3rem;
+}
+
+.second-image {
+    display: none;
+}
+
+.article-card {
+    margin: 20px 40px;
+}
+
+.article-title {
+    /* size and styling of article title box */
+    width: 330px;
+    height: 108px;
+    background-color: #FBFBFB;
+    border-top: solid 4px #1a1a1a;
+    color: #616666;
+    text-decoration: none;
+}
+h1 {
+    font-size: 1.5rem;
+    /* These control the placement of the text */
+    margin-left: 5px;
+    margin-top: 0px;
+    line-height: 24px;
+}
+h2 {
+    font-size: 1.125rem;
+    font-family: futura-pt-condensed, sans-serif;
+    /* This controls line height of subheading */
+    line-height: 19px;
+    /* These control the placement of the text */
+    margin-top: -14px;
+    margin-left: 5px;
+    padding-right: 0px;
+}
+a {
+    text-decoration: none;
+    color: #FBFBFB;
+}
+.card-organizer {
+    /* color of box */
+    margin-left: auto;
+    margin-right: auto;
+    /* seperates box from header and footer */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* determines how high the box is */
+    height: auto;
+     /* This vertically aligns the article cards in the box */
+    display: inline-flex;
+    /* This wraps cards onto different lines */
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.redbackgroundbox {
+     /* color of box */
+     background-color: #C02331;
+     /* seperates box from header */
+     margin-top: 41px;
+     /* determines how tall the box is */
+     height: 368px;
+     /* This makes the red box go all across the page */
+     width: 100vw;
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%, 0);
+     top: 80px;
+     z-index: -1;
+}
+
+@media (max-width: 1268px) {
+    h3 {
+        font-size: 3rem;
+    }
+    .article-title {
+        white-space: wrap;
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; 
+        -webkit-box-orient: vertical;
+    }
+}
+
+/* Small Phone View */
+@media (max-width: 446px){
+    .attributionbox {
+        width: 272px;
+    }
+    
+    .second-image {
+        display: block;
+    }
+
+    .first-image {
+        display: none;
+    }
+
+    .article-card {
+        margin: 20px 8px;
+    }
+    
+    .article-card-picture {
+        /* size of picture */
+        width: 271px;
+        height: 180px;
+    }
+    
+    .article-title {
+        /* size and styling of article title box */
+        width: 272px;
+        height: 108px;
+        -webkit-line-clamp: 4;
+    }
+    h1 {
+        font-size: 1.125rem;
+        line-height: 17px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    h2 {
+        font-size: 1rem;
+        line-height: 14px;
+    }
+    .redbackgroundbox {
+        height: 327px;
+        top: 130px;
+    }
+    .container {
+        margin-top: 50px;
+    }
+    h3 {
+        display: block;
+        font-size: 2rem;
+        color: #FBFBFB;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 90px;
+        white-space: nowrap;
+    }
+}
