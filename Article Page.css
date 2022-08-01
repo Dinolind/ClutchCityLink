@@ -9,7 +9,6 @@ body {
     overflow-x: hidden;
 }
 h1 {
-    font-family:'Agency FB Bold', arial;
     color: #616666;
     font-size: 4rem;
     margin-left: 5px;
@@ -25,7 +24,6 @@ p {
 }
 
 h2 {
-    font-family:'Agency FB Bold', arial;
     font-size: 2.5rem;
     color: #1a1a1a;
     text-decoration: underline;
