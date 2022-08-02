@@ -37,7 +37,6 @@ body {
 
 .socialmediatext {
     text-align: center;
-    font-family: 'Agency FB Bold', arial;
     font-size: 72px;
     color: #303333;
     position: relative;
@@ -68,7 +67,6 @@ body {
 }
 
 .socialmediabottomtext {
-    font-family: 'Agency FB Bold', arial;
     font-size: 3rem;
     color: #303333;
     position: relative;
@@ -192,7 +190,6 @@ body {
     }
     .links-mobile-child1 {
         text-align: center;
-        font-family: 'Agency FB Bold', arial;
         font-size: 48px;
         color: #303333;
         position: relative;
@@ -202,7 +199,6 @@ body {
     }
     .links-mobile-child2 {
         text-align: center;
-        font-family: 'Agency FB Bold', arial;
         font-size: 48px;
         color: #303333;
         position: relative;
@@ -212,7 +208,6 @@ body {
     }
     .links-mobile-child3 {
         text-align: center;
-        font-family: 'Agency FB Bold', arial;
         font-size: 48px;
         color: #303333;
         position: relative;
