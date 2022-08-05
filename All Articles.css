@@ -66,6 +66,7 @@ body {
     border-top: solid 4px #1a1a1a;
     color: #616666;
     text-decoration: none;
+    font-family: 'Agency FB Bold', arial;
 }
 h1 {
     font-size: 1.5rem;
@@ -86,6 +87,7 @@ h2 {
 }
 h3 {
     display: block;
+    font-family: 'Agency FB Bold', arial;
     font-size: 3rem;
     color: #FBFBFB;
     text-align: center;
@@ -119,13 +121,13 @@ a {
 
 /* These cards are here to help with spacing when only 1 or 2 are on the bottom row */
 .article-card-hidden-optional1 {
-    display: none;
+    visibility: hidden;
 }
 .article-card-hidden-optional2 {
-    display: none;
+    visibility: hidden;
 }
 
-@media (max-width: 1268px) {
+@media (max-width: 1229px) {
     .article-card-hidden-optional1{
         display: none;
     }
@@ -140,7 +142,7 @@ a {
     }
 }
 
-@media (max-width: 856px) {
+@media (max-width: 819px) {
     .article-card-hidden-optional2{
         display: none;
     }
@@ -177,7 +179,7 @@ a {
     }
     h1 {
         font-size: 1.125rem;
-        line-height: 17px;
+        line-height: 18px;
         padding-top: 7px;
         padding-bottom: 7px;
     }
