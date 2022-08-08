@@ -176,7 +176,8 @@ a {
     }
     h2 {
         font-size: 1rem;
-        line-height: 14px;
+        line-height: 15.5px;
+        margin-top: -18px;
     }
     .redbackgroundbox {
         height: 327px;
