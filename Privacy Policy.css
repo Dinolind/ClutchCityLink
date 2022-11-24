@@ -27,3 +27,13 @@ h2 {
 .pp-link {
     color:  black
 }
+@media (max-width:492px){
+    h1{
+        font-size: 2.2rem;
+        font-weight: 100;
+    }
+    h2 {
+        font-size: 1.6rem;
+        font-weight: 100;
+    }
+}
