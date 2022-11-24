@@ -59,3 +59,18 @@ h3{
         background-image: none;
     }
 }
+
+@media (max-width: 446px){
+    h1{
+        font-size: 2.2rem;
+        font-weight: 100;
+    }
+    h2{
+        font-size: 1.6rem;
+        font-weight: 100;
+    }
+    h3{
+        font-size: 2.2rem;
+        font-weight: 100;
+    }
+}
