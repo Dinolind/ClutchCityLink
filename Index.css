@@ -173,6 +173,8 @@ a {
         line-height: 18px;
         padding-top: 4px;
         padding-bottom: 10px;
+        font-weight: 100;
+        color: #303333;
     }
     h2 {
         font-size: 1rem;
@@ -196,5 +198,6 @@ a {
         transform: translate(-50%, 0);
         top: 90px;
         white-space: nowrap;
+        font-weight: 100;
     }
 }
