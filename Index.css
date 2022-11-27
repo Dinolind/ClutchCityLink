@@ -136,6 +136,9 @@ a {
         -webkit-line-clamp: 3; 
         -webkit-box-orient: vertical;
     }
+    h1 {
+        font-size: 1.4rem;
+    }
 }
 
 /* Small Phone View */
