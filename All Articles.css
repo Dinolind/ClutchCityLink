@@ -119,15 +119,15 @@ a {
 
 /* These cards are here to help with spacing when only 1 or 2 are on the bottom row */
 .article-card-hidden-optional1 {
-    display: none;
+    visibility: hidden;
 }
 .article-card-hidden-optional2 {
-    display: none;
+    visibility: hidden;
 }
 
 @media (max-width: 1229px) {
     .article-card-hidden-optional1{
-        display: none;
+        visibility: hidden;
     }
     .article-card-hidden-optional2 {
         display: none;
