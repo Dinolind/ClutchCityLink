@@ -1,201 +1,83 @@
-body {
-    background-color: #1a1a1a;
-    overflow-x: hidden;
-}
-
-
 .container {
     max-width: 1366px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    overflow-x: hidden;
+    min-height: calc(100vh - 222px);
 }
 
-.attributionbox {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    width: 330px;
-    height: 40px;
-    background-color: #303333;
+.form-group {
+    padding-top: 10px;
 }
 
-.attribution-text {
-    margin-left: 3px;
-    margin-right: 3px;
-    font-size: 1rem;
+label {
     font-family: futura-pt-condensed, sans-serif;
-    color: #FBFBFB;
-    word-wrap: break-word;
-    line-height: 18px;
-}
-
-.attribution-text-link {
-    text-decoration: underline;
-    color: #FBFBFB;
-}
-
-.article-card-picture {
-    /* size of picture */
-    width: 330px;
-    height: 220px;
-    /* Placeholder for img, delete if neccesary */
-    background-color: #FBFBFB;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    color: #616666;
-    font-family: futura-pt-condensed, sans-serif;
-    font-size: 3rem;
-}
-
-.second-image {
-    display: none;
-}
-
-.article-card {
-    margin: 20px 40px;
-}
-
-.article-title {
-    /* size and styling of article title box */
-    width: 330px;
-    height: 108px;
-    background-color: #FBFBFB;
-    border-top: solid 4px #1a1a1a;
-    color: #616666;
-    text-decoration: none;
-}
-h1 {
     font-size: 1.5rem;
-    /* These control the placement of the text */
-    margin-left: 5px;
-    margin-top: 0px;
-    line-height: 24px;
+    padding-top: 30px;
 }
-h2 {
-    font-size: 1.125rem;
-    font-family: futura-pt-condensed, sans-serif;
-    /* This controls line height of subheading */
-    line-height: 19px;
-    /* These control the placement of the text */
-    margin-top: -14px;
-    margin-left: 5px;
-    margin-right: 0px;
-}
-h3 {
+
+.form-control {
+    width: 50%;
+    height: 30px;
     display: block;
-    font-size: 3rem;
-    color: #FBFBFB;
-    text-align: center;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-    white-space: nowrap;
-    text-decoration: underline;
-    margin-bottom: 30px;
 }
-a {
+
+.btn-primary {
+    padding: 14px 45px;
+    background-color: #901A25;
+    color: #FBFBFB;
+    font-family: 'Agency FB Bold', arial;
+    font-size: 1.125rem;
     text-decoration: none;
-    color: #FBFBFB;
+    border-radius: 13px;
+    border: none;
+    margin-top: 20px;
 }
-.card-organizer {
-    /* color of box */
-    margin-left: auto;
-    margin-right: auto;
-    /* seperates box from header and footer */
-    margin-top: 10px;
-    margin-bottom: 20px;
-    /* determines how high the box is */
+
+h2 {
+    font-size: 3rem;
+    font-family: 'Agency FB Bold', arial;
+    margin-bottom: 10px;
+}
+
+.redrule {
+    border: solid #C00717 2px;
+    width: 100%;
+    margin-top: 0px;
+}
+
+p {
+    font-size: 1.75rem;
+}
+
+input {
+    font-size: 20px;
+    font-family: 'Agency FB Bold', arial;
+}
+
+.basketball-container {
+    width: 45%;
     height: auto;
-     /* This vertically aligns the article cards in the box */
-    display: inline-flex;
-    /* This wraps cards onto different lines */
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: center;
 }
 
-/* These cards are here to help with spacing when only 1 or 2 are on the bottom row */
-.article-card-hidden-optional1 {
-    visibility: hidden;;
-}
-.article-card-hidden-optional2 {
-    visibility: hidden;;
+.col-md-12 {
+    width: 100%;
 }
 
-@media (max-width: 1229px) {
-    .article-card-hidden-optional1{
-        visibility: hidden;
+@media (max-width:743px) {
+    .form-control {
+        width: 98%;
     }
-    .article-card-hidden-optional2 {
+    .basketball {
         display: none;
-    }
-    .article-title {
-        white-space: wrap;
-        display: inline-block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3; 
-        -webkit-box-orient: vertical;
-    }
-}
-
-@media (max-width: 819px) {
-    .article-card-hidden-optional1{
-        display: none;
-    }
-    .article-card-hidden-optional2{
-        display: none;
-    }
-}
-/* Small Phone View */
-@media (max-width: 446px){
-    .attributionbox {
-        width: 272px;
-    }
-    
-    .second-image {
-        display: block;
-    }
-
-    .first-image {
-        display: none;
-    }
-    
-    .article-card {
-        margin: 20px 8px;
-    }
-    
-    .article-card-picture {
-        /* size of picture */
-        width: 271px;
-        height: 180px;
-    }
-    
-    .article-title {
-        /* size and styling of article title box */
-        width: 272px;
-        height: 108px;
-        -webkit-line-clamp: 4;
-    }
-    h1 {
-        font-size: 1.125rem;
-        line-height: 18px;
-        padding-top: 4px;
-        padding-bottom: 10px;
-        font-weight: 100;
-        color: #303333;
     }
     h2 {
-        font-size: 1rem;
-        line-height: 15.5px;
-        margin-top: -18px;
+        font-size: 2rem;
     }
-    h3 {
-        font-size: 2.5rem;
-        font-weight: 100;
+    p {
+        font-size: 1.25rem;
+    }
+    label {
+        font-size: 1.5rem;
     }
 }
