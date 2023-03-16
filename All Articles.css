@@ -122,12 +122,12 @@ a {
     visibility: hidden;
 }
 .article-card-hidden-optional2 {
-    visibility: hidden;
+    display: none;
 }
 
 @media (max-width: 1229px) {
     .article-card-hidden-optional1{
-        visibility: hidden;
+        display: none;
     }
     .article-card-hidden-optional2 {
         display: none;
